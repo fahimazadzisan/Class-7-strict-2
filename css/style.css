@@ -1,0 +1,66 @@
+* {margin: 0px;padding: 0px;}
+header { background-color: rgb(246, 249, 249); }
+.header-wrapper { width: 80%; margin: auto; display: flex; justify-content: space-between; padding: 20px 0px; align-items: center; }
+.logo { width: 20%; }
+nav { width: 35%; }
+nav ul { list-style: none; display: flex; justify-content: space-between; }
+nav ul li { }
+nav ul li a { text-decoration: none; color: rgb(45, 57, 80); text-transform: uppercase; }
+.banner { background-image: url("../images/banner.png"); min-height: 100vh; background-repeat: no-repeat; background-size: cover; background-position: center center; position: relative; }
+.banner-content { width: 30%; position: absolute; top: 40%; left: 50%; transform: translate(-50%, 50%); text-align: center; }
+.banner-content h1 { color: rgb(255, 255, 255); font-size: 100px; text-transform: uppercase; }
+.banner-content span { display: block; height: 3px; width: 100%; background: rgb(21, 164, 250); }
+.banner-content p { color: rgb(255, 255, 255); margin: 15px; font-size: 15px; }
+.banner-content button { background: transparent; border: 1px solid white; color: rgb(255, 255, 255); text-transform: capitalize; font-size: 18px; padding: 10px 20px; border-radius: 5px; margin: 30px; cursor: pointer; transition: all 0.4s ease 0s; }
+.banner-content button:focus { outline: none; }
+.banner-content button:hover { color: rgb(255, 255, 255); background-color: rgb(21, 164, 250); }
+.icon { color: rgb(255, 255, 255); font-size: 20px; position: absolute; left: 50%; top: 75%; transform: translate(-50%, -75%); animation: 2s linear 0s infinite normal none running ani; }
+@keyframes ani { 
+  0% { top: 75%; }
+  100% { top: 85%; }
+}
+.design { background-color: rgb(246, 249, 249); padding: 50px 0px; }
+.wraper { width: 80%; margin: auto; }
+.content { text-align: center; }
+.content h2 { color: rgb(45, 57, 80); text-transform: capitalize; font-size: 30px; }
+.content p { color: rgb(153, 153, 153); margin-top: 20px; }
+.feature-section { }
+.single-feature { width: 30%; text-align: center; padding: 50px 0px; }
+.feature-icon { height: 100px; width: 100px; background: linear-gradient(to right, rgb(72, 186, 255) 0%, rgb(95, 195, 255) 50%, rgb(72, 186, 255) 50%, rgb(95, 195, 255) 100%); margin: auto; font-size: 40px; color: rgb(255, 255, 255); line-height: 100px; }
+.single-feature h4 { color: rgb(45, 57, 80); text-transform: capitalize; margin: 10px 0px; font-size: 20px; }
+.single-feature p { color: rgb(153, 153, 153); }
+.flex { display: flex; justify-content: space-between; }
+.showcase { background: rgb(246, 249, 249); padding: 50px 0px; }
+.heading { text-align: center; }
+.heading h2 {font-size: 18pt;text-transform: capitalize;color: rgb(45, 57, 80);}
+.heading p {font-size: 8pt;}
+.gallery {
+    
+display: flex;
+    
+justify-content: space-between;
+    
+margin: 30px 0;
+}
+.single-gallery { width: 30%; }
+.img { position: relative; }
+.img::before { content: ""; position: absolute; top: 0px; width: 0%; height: 100%; background-color: rgb(72, 186, 255); opacity: 0; transition: all 0.4s ease-in-out 0s; }
+.single-gallery:hover .img::before { opacity: 0.5; width: 100%; }
+.img img { width: 100%; }
+.gallery-icon {
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .6s all ease-in-out;
+}
+.gallery-icon ul {
+    list-style: none;
+
+ }
+.gallery-icon ul li {
+    float: left;margin: 5px;color: #fff;border: 1px solid #fff;padding: 5px;border-radius: 5px;}
+
+.single-gallery:hover .gallery-icon{
+    opacity: 1;
+}
